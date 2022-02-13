@@ -30,10 +30,10 @@ public class MatchDataProcessor implements ItemProcessor<MatchInput, MatchEntity
         if("bat".equals(matchInput.getToss_decision())) {
             firstInningsTeam = matchInput.getToss_winner();
             secondInningsTeam = matchInput.getToss_winner().equals(matchInput.getTeam2())
-                    ? matchInput.getTeam2() : matchInput.getTeam1();
+                    ? matchInput.getTeam1() : matchInput.getTeam2();
         } else {
             secondInningsTeam = matchInput.getToss_winner();
-            firstInningsTeam = matchInput.getToss_winner().equals(matchInput.getTeam2())
+            firstInningsTeam = matchInput.getToss_winner().equals(matchInput.getTeam1())
                     ? matchInput.getTeam2() : matchInput.getTeam1();
         }
         matchEntity.setTeam1(firstInningsTeam);
