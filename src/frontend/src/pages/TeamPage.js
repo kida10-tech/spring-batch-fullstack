@@ -16,7 +16,7 @@ export const TeamPage = () => {
         setTeam(data);
       };
       fetchMatches();
-    }, [] //This empty array as a second argument tells: Call useEffect only when something inside change
+    }, [teamName] //This empty array as a second argument tells: Call useEffect only when something inside change
   );
 
   if(!team || !team.teamName) {
