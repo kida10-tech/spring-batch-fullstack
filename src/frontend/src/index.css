@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;800&display=swap');
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -10,11 +12,17 @@ a {
 
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Mulish', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #282c34;
+  color: white;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+a {
+  color: lightgrey;
 }
 
 code {
