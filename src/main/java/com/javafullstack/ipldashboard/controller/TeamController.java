@@ -36,4 +36,9 @@ public class TeamController {
                 endDate
         );
     }
+
+    @GetMapping("/team")
+    public Iterable<TeamEntity> getAllTeam() {
+        return teamRepository.findAll();
+    }
 }
